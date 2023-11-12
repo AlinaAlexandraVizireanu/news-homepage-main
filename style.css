@@ -37,6 +37,8 @@ body.overlay::before {
   margin: 1.86em 1.06em 5em 1.06em;
 }
 
+/* ------------------------Design the header part------------------------ */
+
 ul {
   display: flex;
   flex-direction: column;
@@ -86,3 +88,34 @@ img.hamburgerMenu {
   z-index: 3;
 }
 
+/* ------------------------Design the article part------------------------ */
+
+img.img_article {
+  margin-top: 2.133em;
+  margin-bottom: 1.6em;
+}
+
+h1.title_article {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: hsl(240, 100%, 5%);
+}
+
+p.content_article {
+  color: hsl(236, 13%, 42%);
+  line-height: 26px;
+  margin-top: 1.06em;
+  margin-bottom: 1.6em;
+}
+
+a.button_article {
+  text-decoration: none;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  font-size: 0.875rem; /*14px */
+  font-weight: 700;
+  letter-spacing: 4.375px;
+  padding: 0.92em 2.5em 0.78em 2.21em;
+  display: inline-block;
+  text-transform: uppercase;
+}
