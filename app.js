@@ -1,11 +1,10 @@
 const hamburgerMenu = document.querySelector(".hamburgerMenu");
 const navList = document.querySelector(".navList");
+const body = document.querySelector("body");
 
 hamburgerMenu.addEventListener("click", () => {
-  console.dir(hamburgerMenu);
-
   navList.classList.toggle("visible");
-
+  body.classList.toggle("overlay");
   if (navList.classList.contains("visible")) {
     hamburgerMenu.src = "./assets/images/icon-menu-close.svg";
   } else {
