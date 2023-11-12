@@ -5,5 +5,68 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-size: 0.938rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: hsl(36, 100%, 99%);
+}
+
+.container {
+  margin: 1.86em 1.06em 5em 1.06em;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  width: 68.27%;
+  padding-top: 9.6em;
+  padding-left: 1.6em;
+  background-color: hsl(36, 100%, 99%);
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: height 0.5s ease, visibility 0s 0.5s, opacity 0.5s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+nav.navMenu {
+  align-self: center;
+}
+
+li {
+  list-style: none;
+  font-size: 1.125rem;
+  color: hsl(240, 100%, 5%);
+}
+
+.visible {
+  height: 100vh;
+  visibility: visible;
+  opacity: 1;
+  transition: height 0.5s ease, visibility 0s, opacity 0.5s ease;
+}
+
+img.hamburgerMenu {
+  position: relative;
+  z-index: 3;
 }
