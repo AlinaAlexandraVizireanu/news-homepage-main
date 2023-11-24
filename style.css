@@ -158,3 +158,44 @@ p.section_primary-content {
   margin-bottom: 2.06em;
   border-bottom: 1px solid hsl(236, 13%, 42%);
 }
+
+/* ------------------------Design the secondary aside part------------------------ */
+
+aside.secondary {
+  margin-top: 4.26em;
+}
+
+.section_secondary {
+  display: flex;
+  gap: 1.6em;
+}
+
+.section_secondary_img img {
+  max-width: none;
+  width: 100px;
+  height: 127px;
+  flex-shrink: 0;
+}
+
+.section_secondary:nth-of-type(2) {
+  margin-top: 2.133em;
+  margin-bottom: 2.133em;
+}
+
+.section_secondary_text h1 {
+  font-size: 2rem;
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+}
+
+.section_secondary_text h4 {
+  font-size: 1.125rem;
+  color: hsl(240, 100%, 5%);
+  margin-top: 0.666em;
+  margin-bottom: 0.5em;
+}
+
+.section_secondary_text p {
+  color: hsl(236, 13%, 42%);
+  line-height: 1.73em;
+}
