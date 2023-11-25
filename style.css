@@ -228,8 +228,54 @@ aside.secondary {
     font-size: 0.938rem;
   }
 
-  .navList li:hover {
+  .navList li:hover,
+  .section_secondary_text h4:hover {
     cursor: pointer;
     color: hsl(5, 85%, 63%);
+  }
+
+  h4.section_primary-title:hover {
+    cursor: pointer;
+    color: hsl(35, 77%, 62%);
+  }
+
+  a.button_article:hover {
+    cursor: pointer;
+    background-color: hsl(240, 100%, 5%);
+  }
+
+  .secondary {
+    display: flex;
+  }
+
+  .section_secondary:nth-of-type(2) {
+    margin: 0;
+  }
+
+  h1.title_article {
+    font-size: 3.5rem;
+  }
+
+  h1.aside_primary-title {
+    font-size: 2.5rem;
+  }
+
+  .section_secondary:nth-of-type(-n + 2) {
+    margin-right: 2em;
+  }
+
+  .section_secondary_img img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  
+  .section_secondary_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section_secondary_text h4 {
+    margin: 0;
   }
 }
