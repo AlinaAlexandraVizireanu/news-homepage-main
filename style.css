@@ -26,11 +26,13 @@ body::before {
   background-color: rgba(0, 0, 26, 0.5);
   z-index: 2;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.5s ease;
 }
 
 body.overlay::before {
   opacity: 1;
+  visibility: visible;
 }
 
 .container {
@@ -39,7 +41,7 @@ body.overlay::before {
 
 /* ------------------------Design the header part------------------------ */
 
-ul {
+.navList {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -70,7 +72,7 @@ nav.navMenu {
   align-self: center;
 }
 
-li {
+.navList li {
   list-style: none;
   font-size: 1.125rem;
   color: hsl(240, 100%, 5%);
@@ -198,4 +200,36 @@ aside.secondary {
 .section_secondary_text p {
   color: hsl(236, 13%, 42%);
   line-height: 1.73em;
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: grid;
+    margin: 5.933em 11em 8.6em 11em;
+  }
+
+  .navList {
+    height: auto;
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+    flex-direction: row;
+    gap: 2.66em;
+    padding: 0;
+    position: static;
+    transition: none;
+  }
+
+  img.hamburgerMenu {
+    display: none;
+  }
+
+  .navList li {
+    font-size: 0.938rem;
+  }
+
+  .navList li:hover {
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+  }
 }
