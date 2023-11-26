@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="grid-col-span-2">
         <img src="./assets/images/logo.svg" alt="W letter" />
         <nav class="navMenu">
           <img
@@ -34,14 +34,20 @@
         </nav>
       </header>
       <article>
-        <img class="img_article" src="" alt="colorful geometric shapes" />
+        <img
+          class="img_article grid-col-span-2"
+          src=""
+          alt="colorful geometric shapes"
+        />
         <h1 class="title_article">The Bright Future of Web 3.0?</h1>
-        <p class="content_article">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <a href="#readmore" class="button_article">Read More</a>
+        <div class="content_article-wrap">
+          <p class="content_article">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a href="#readmore" class="button_article">Read More</a>
+        </div>
       </article>
       <aside class="primary">
         <div class="aside_pimary-container">
@@ -68,7 +74,7 @@
           </section>
         </div>
       </aside>
-      <aside class="secondary">
+      <aside class="secondary grid-col-span-2">
         <section class="section_secondary">
           <div class="section_secondary_img">
             <img src="./assets/images/image-retro-pcs.jpg" alt="computer" />

@@ -205,7 +205,12 @@ aside.secondary {
 @media (min-width: 600px) {
   .container {
     display: grid;
+    grid-template-columns: auto 350px ;
     margin: 5.933em 11em 8.6em 11em;
+  }
+
+  .grid-col-span-2 {
+    grid-column: span 2;
   }
 
   .navList {
@@ -232,6 +237,16 @@ aside.secondary {
   .section_secondary_text h4:hover {
     cursor: pointer;
     color: hsl(5, 85%, 63%);
+  }
+
+  article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 2em;
+  }
+
+  a.button_article{
+    width: 190px;
   }
 
   h4.section_primary-title:hover {
@@ -269,7 +284,7 @@ aside.secondary {
     width: auto;
     height: auto;
   }
-  
+
   .section_secondary_text {
     display: flex;
     flex-direction: column;
@@ -277,5 +292,30 @@ aside.secondary {
   }
   .section_secondary_text h4 {
     margin: 0;
+  }
+
+  img.img_article , aside.primary{
+    margin-top: 3.673em;
+  }
+
+  img.img_article{
+    margin-bottom: 1.86em;
+  }
+
+  p.content_article{
+    margin-top: 0.133;
+    margin-bottom: 1.93em;
+  }
+
+  .aside_pimary-container {
+    padding-top: 2.133em;
+  }
+
+  h1.aside_primary-title{
+    margin-bottom: 0.85em;
+  }
+
+  aside.secondary {
+    margin-top: 4.86em;
   }
 }
